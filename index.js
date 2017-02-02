@@ -11,7 +11,7 @@ var StateToggleBehavior = {
     var i, ele;
     for( i = 0; i < eles.length; i++ ) {
       ele = eles[i];
-      ele.style.display = (eles.getAttribute('state') === state) ? 'block' : 'none';
+      ele.style.display = (ele.getAttribute('state') === state) ? 'block' : 'none';
     }
   }
 }
