@@ -5,12 +5,13 @@ var StateToggleBehavior = {
       states.push('state');
     }
 
-    states.forEach((type) => {
+    for( var j = 0; j < states.length; j++ ) {
+      var type = states[j];
       var eles = this.querySelectorAll('['+type+']');
       for( var i = 0; i < eles.length; i++ ) {
         eles[i].style.display = 'none';
       }
-    });
+    }
   },
 
   toggleState : function(state, type) {
